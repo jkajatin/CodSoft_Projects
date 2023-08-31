@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/currencytitle"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dollarbtn"
+        android:layout_width="134dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/material_dynamic_neutral30"
+        android:text="USD"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <Button
+        android:id="@+id/inrbtn"
+        android:layout_width="134dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="248dp"
+        android:background="@color/material_dynamic_neutral30"
+        android:text="INR"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/conversion"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toStartOf="@+id/inrbtn"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/dollarbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:hint="USD"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:hint="INR"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/convertbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:background="@color/material_dynamic_neutral30"
+        android:text="Convert"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
